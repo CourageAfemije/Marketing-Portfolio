@@ -1,0 +1,67 @@
+<svg width="580" height="464" viewBox="0 0 580 464" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0D1117"/><stop offset="100%" stop-color="#111820"/></linearGradient>
+    <linearGradient id="q4" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBBF24"/><stop offset="100%" stop-color="#D97706"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <rect width="580" height="464" fill="url(#bg)"/>
+
+  <!-- Grid -->
+  <g stroke="#1E2430" stroke-width="1">
+    <line x1="56" y1="80"  x2="420" y2="80"/>
+    <line x1="56" y1="150" x2="420" y2="150"/>
+    <line x1="56" y1="220" x2="420" y2="220"/>
+    <line x1="56" y1="290" x2="420" y2="290"/>
+    <line x1="56" y1="360" x2="420" y2="360"/>
+  </g>
+  <!-- Axes -->
+  <line x1="56" y1="60" x2="56" y2="365" stroke="#30363D" stroke-width="2"/>
+  <line x1="56" y1="360" x2="425" y2="360" stroke="#30363D" stroke-width="2"/>
+
+  <!-- Bars -->
+  <rect x="82"  y="295" width="52" height="65"  rx="5" fill="#F59E0B" opacity="0.18"/>
+  <rect x="166" y="255" width="52" height="105" rx="5" fill="#F59E0B" opacity="0.28"/>
+  <rect x="250" y="205" width="52" height="155" rx="5" fill="#F59E0B" opacity="0.42"/>
+  <!-- Q4 peak -->
+  <rect x="334" y="108" width="52" height="252" rx="5" fill="url(#q4)" filter="url(#glow)"/>
+
+  <!-- Trend line -->
+  <polyline points="108,313 192,272 276,222 360,164" fill="none" stroke="#F59E0B" stroke-width="2" stroke-dasharray="6 3" opacity="0.55"/>
+
+  <!-- Quarter labels -->
+  <text x="108" y="380" text-anchor="middle" fill="#8B949E" font-size="12" font-family="system-ui,sans-serif">Q1</text>
+  <text x="192" y="380" text-anchor="middle" fill="#8B949E" font-size="12" font-family="system-ui,sans-serif">Q2</text>
+  <text x="276" y="380" text-anchor="middle" fill="#8B949E" font-size="12" font-family="system-ui,sans-serif">Q3</text>
+  <text x="360" y="380" text-anchor="middle" fill="#FBBF24" font-size="12" font-family="system-ui,sans-serif" font-weight="700">Q4 ↑</text>
+
+  <!-- Q4 peak label -->
+  <rect x="316" y="82" width="76" height="22" rx="4" fill="#F59E0B" opacity="0.15"/>
+  <text x="354" y="97" text-anchor="middle" fill="#FBBF24" font-size="11" font-family="system-ui,sans-serif" font-weight="700">PEAK</text>
+
+  <!-- Divider -->
+  <line x1="448" y1="40" x2="448" y2="420" stroke="#21262D" stroke-width="1"/>
+
+  <!-- Metric cards -->
+  <rect x="460" y="72"  width="104" height="90" rx="10" fill="#161B22"/>
+  <rect x="460" y="72"  width="104" height="90" rx="10" stroke="#F59E0B" stroke-width="1.5" stroke-opacity="0.55"/>
+  <text x="512" y="100" text-anchor="middle" fill="#8B949E" font-size="9.5" font-family="system-ui,sans-serif" letter-spacing="1">ORDER VALUE</text>
+  <text x="512" y="148" text-anchor="middle" fill="#FBBF24" font-size="30" font-family="system-ui,sans-serif" font-weight="800">+18%</text>
+
+  <rect x="460" y="180" width="104" height="90" rx="10" fill="#161B22"/>
+  <rect x="460" y="180" width="104" height="90" rx="10" stroke="#D97706" stroke-width="1.5" stroke-opacity="0.45"/>
+  <text x="512" y="208" text-anchor="middle" fill="#8B949E" font-size="9.5" font-family="system-ui,sans-serif" letter-spacing="1">SHOPS GMV</text>
+  <text x="512" y="256" text-anchor="middle" fill="#F0F6FC" font-size="30" font-family="system-ui,sans-serif" font-weight="800">31%</text>
+
+  <rect x="460" y="288" width="104" height="90" rx="10" fill="#161B22"/>
+  <rect x="460" y="288" width="104" height="90" rx="10" stroke="#30363D" stroke-width="1"/>
+  <text x="512" y="316" text-anchor="middle" fill="#8B949E" font-size="9.5" font-family="system-ui,sans-serif" letter-spacing="1">NEW STREAM</text>
+  <text x="512" y="344" text-anchor="middle" fill="#F0F6FC" font-size="12" font-family="system-ui,sans-serif" font-weight="600">Grocery</text>
+  <text x="512" y="362" text-anchor="middle" fill="#F0F6FC" font-size="12" font-family="system-ui,sans-serif" font-weight="600">Vertical</text>
+
+  <!-- Footer -->
+  <rect x="0" y="416" width="580" height="48" fill="#161B22"/>
+  <line x1="0" y1="416" x2="580" y2="416" stroke="#21262D" stroke-width="1"/>
+  <circle cx="32" cy="440" r="6" fill="#F59E0B"/>
+  <text x="46" y="445" fill="#8B949E" font-size="12" font-family="system-ui,sans-serif">Heyfood · Q4 Revenue Optimisation</text>
+</svg>

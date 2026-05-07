@@ -1,0 +1,109 @@
+<svg width="580" height="464" viewBox="0 0 580 464" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0D1117"/><stop offset="100%" stop-color="#0F1A10"/></linearGradient>
+    <linearGradient id="funnelGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#2D4A18"/><stop offset="100%" stop-color="#1A2810"/></linearGradient>
+  </defs>
+
+  <rect width="580" height="464" fill="url(#bg)"/>
+
+  <!-- Eyebrow -->
+  <text x="32" y="44" fill="#8B949E" font-size="10" font-family="system-ui,sans-serif" letter-spacing="1.5">PHASE 01 — DATA AUDIT &amp; AUDIENCE ANALYSIS</text>
+
+  <!-- Left side: Funnel audit visual -->
+  <!-- Funnel stages with problem markers -->
+
+  <!-- Funnel stage 1: Traffic -->
+  <rect x="32" y="64" width="240" height="52" rx="8" fill="url(#funnelGrad)"/>
+  <rect x="32" y="64" width="240" height="52" rx="8" stroke="#84CC16" stroke-width="1.5" stroke-opacity="0.5"/>
+  <text x="80" y="85" fill="#F0F6FC" font-size="12" font-family="system-ui,sans-serif" font-weight="600">Traffic</text>
+  <text x="80" y="103" fill="#8B949E" font-size="11" font-family="system-ui,sans-serif">All audiences, no segmentation</text>
+  <!-- Problem marker -->
+  <circle cx="256" cy="90" r="12" fill="#EF4444" opacity="0.15"/>
+  <circle cx="256" cy="90" r="12" fill="none" stroke="#EF4444" stroke-width="1.5" stroke-opacity="0.6"/>
+  <text x="256" y="95" text-anchor="middle" fill="#EF4444" font-size="13" font-family="system-ui,sans-serif" font-weight="700">!</text>
+
+  <!-- Arrow down -->
+  <path d="M146 120 L146 130 L140 130 L152 144 L164 130 L158 130 L158 120 Z" fill="#30363D"/>
+
+  <!-- Funnel stage 2: Ad Set -->
+  <rect x="52" y="148" width="200" height="52" rx="8" fill="url(#funnelGrad)"/>
+  <rect x="52" y="148" width="200" height="52" rx="8" stroke="#84CC16" stroke-width="1.5" stroke-opacity="0.4"/>
+  <text x="92" y="169" fill="#F0F6FC" font-size="12" font-family="system-ui,sans-serif" font-weight="600">Ad Creatives</text>
+  <text x="92" y="187" fill="#8B949E" font-size="11" font-family="system-ui,sans-serif">Untested, limited rotation</text>
+  <circle cx="236" cy="174" r="12" fill="#EF4444" opacity="0.15"/>
+  <circle cx="236" cy="174" r="12" fill="none" stroke="#EF4444" stroke-width="1.5" stroke-opacity="0.6"/>
+  <text x="236" y="179" text-anchor="middle" fill="#EF4444" font-size="13" font-family="system-ui,sans-serif" font-weight="700">!</text>
+
+  <path d="M146 204 L146 214 L140 214 L152 228 L164 214 L158 214 L158 204 Z" fill="#30363D"/>
+
+  <!-- Funnel stage 3: Landing Page -->
+  <rect x="72" y="232" width="160" height="52" rx="8" fill="url(#funnelGrad)"/>
+  <rect x="72" y="232" width="160" height="52" rx="8" stroke="#84CC16" stroke-width="1.5" stroke-opacity="0.3"/>
+  <text x="104" y="253" fill="#F0F6FC" font-size="12" font-family="system-ui,sans-serif" font-weight="600">Landing Page</text>
+  <text x="104" y="271" fill="#8B949E" font-size="11" font-family="system-ui,sans-serif">No CRO applied</text>
+  <circle cx="216" cy="258" r="12" fill="#EF4444" opacity="0.15"/>
+  <circle cx="216" cy="258" r="12" fill="none" stroke="#EF4444" stroke-width="1.5" stroke-opacity="0.6"/>
+  <text x="216" y="263" text-anchor="middle" fill="#EF4444" font-size="13" font-family="system-ui,sans-serif" font-weight="700">!</text>
+
+  <path d="M146 288 L146 298 L140 298 L152 312 L164 298 L158 298 L158 288 Z" fill="#30363D"/>
+
+  <!-- Funnel stage 4: Conversion -->
+  <rect x="92" y="316" width="120" height="52" rx="8" fill="#1A2810"/>
+  <rect x="92" y="316" width="120" height="52" rx="8" stroke="#A3E635" stroke-width="2"/>
+  <text x="152" y="337" text-anchor="middle" fill="#A3E635" font-size="12" font-family="system-ui,sans-serif" font-weight="700">Conversion</text>
+  <text x="152" y="355" text-anchor="middle" fill="#84CC16" font-size="11" font-family="system-ui,sans-serif">CAC ₦3,500+</text>
+
+  <!-- Magnifying glass overlay -->
+  <circle cx="152" cy="220" r="130" fill="none" stroke="#A3E635" stroke-width="1.5" stroke-dasharray="6 4" stroke-opacity="0.15"/>
+  <!-- Mag glass handle -->
+  <line x1="253" y1="321" x2="278" y2="346" stroke="#A3E635" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- Right side: Data analysis panel -->
+  <line x1="316" y1="56" x2="316" y2="400" stroke="#21262D" stroke-width="1"/>
+
+  <!-- 6 months data chip -->
+  <rect x="332" y="64" width="232" height="40" rx="8" fill="#161B22"/>
+  <rect x="332" y="64" width="232" height="40" rx="8" stroke="#A3E635" stroke-width="1.5" stroke-opacity="0.5"/>
+  <text x="448" y="80" text-anchor="middle" fill="#8B949E" font-size="10" font-family="system-ui,sans-serif" letter-spacing="0.5">DATASET ANALYSED</text>
+  <text x="448" y="96" text-anchor="middle" fill="#A3E635" font-size="13" font-family="system-ui,sans-serif" font-weight="700">6 months of campaign data</text>
+
+  <!-- Scatter / data points -->
+  <text x="332" y="138" fill="#8B949E" font-size="10" font-family="system-ui,sans-serif" letter-spacing="1">COHORT CAC ANALYSIS</text>
+  <!-- Grid -->
+  <rect x="332" y="148" width="232" height="148" rx="6" fill="#161B22"/>
+  <line x1="332" y1="198" x2="564" y2="198" stroke="#21262D" stroke-width="1"/>
+  <line x1="332" y1="248" x2="564" y2="248" stroke="#21262D" stroke-width="1"/>
+  <line x1="382" y1="148" x2="382" y2="296" stroke="#21262D" stroke-width="1"/>
+  <line x1="448" y1="148" x2="448" y2="296" stroke="#21262D" stroke-width="1"/>
+  <line x1="514" y1="148" x2="514" y2="296" stroke="#21262D" stroke-width="1"/>
+
+  <!-- Scatter dots (high CAC cohorts = red, low CAC = green) -->
+  <circle cx="360" cy="270" r="5" fill="#EF4444" opacity="0.7"/>
+  <circle cx="372" cy="258" r="5" fill="#EF4444" opacity="0.7"/>
+  <circle cx="405" cy="240" r="5" fill="#EF4444" opacity="0.5"/>
+  <circle cx="420" cy="275" r="5" fill="#EF4444" opacity="0.6"/>
+  <circle cx="440" cy="230" r="5" fill="#EF4444" opacity="0.5"/>
+  <!-- Low CAC seed cohorts -->
+  <circle cx="465" cy="170" r="7" fill="#A3E635" opacity="0.9"/>
+  <circle cx="490" cy="162" r="7" fill="#A3E635" opacity="0.9"/>
+  <circle cx="530" cy="175" r="7" fill="#A3E635" opacity="0.9"/>
+  <circle cx="545" cy="158" r="6" fill="#A3E635" opacity="0.7"/>
+  <!-- Seed label -->
+  <rect x="456" y="280" width="100" height="18" rx="4" fill="#161B22"/>
+  <rect x="456" y="280" width="100" height="18" rx="4" stroke="#A3E635" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="506" y="292" text-anchor="middle" fill="#A3E635" font-size="10" font-family="system-ui,sans-serif" font-weight="600">Seed Audiences ↑</text>
+
+  <!-- Findings box -->
+  <rect x="332" y="308" width="232" height="72" rx="8" fill="#161B22"/>
+  <rect x="332" y="308" width="232" height="72" rx="8" stroke="#30363D" stroke-width="1"/>
+  <text x="348" y="328" fill="#8B949E" font-size="10" font-family="system-ui,sans-serif" letter-spacing="0.5">AUDIT FINDINGS</text>
+  <text x="348" y="346" fill="#F0F6FC" font-size="11" font-family="system-ui,sans-serif" font-weight="600">· Lowest CAC cohorts identified</text>
+  <text x="348" y="362" fill="#F0F6FC" font-size="11" font-family="system-ui,sans-serif" font-weight="600">· Lookalike seed built from top buyers</text>
+  <text x="348" y="378" fill="#F0F6FC" font-size="11" font-family="system-ui,sans-serif" font-weight="600">· Budget reallocation planned</text>
+
+  <!-- Footer -->
+  <rect x="0" y="416" width="580" height="48" fill="#161B22"/>
+  <line x1="0" y1="416" x2="580" y2="416" stroke="#21262D" stroke-width="1"/>
+  <circle cx="32" cy="440" r="6" fill="#84CC16"/>
+  <text x="46" y="445" fill="#8B949E" font-size="12" font-family="system-ui,sans-serif">Pricepally · Phase 01 — Discovery: Auditing the Funnel</text>
+</svg>

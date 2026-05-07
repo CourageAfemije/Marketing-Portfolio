@@ -1,0 +1,99 @@
+<svg width="580" height="464" viewBox="0 0 580 464" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0D1117"/><stop offset="100%" stop-color="#111820"/></linearGradient>
+  </defs>
+
+  <rect width="580" height="464" fill="url(#bg)"/>
+
+  <!-- Eyebrow -->
+  <text x="32" y="44" fill="#8B949E" font-size="10" font-family="system-ui,sans-serif" letter-spacing="1.5">Q1 — TRACKING SETUP &amp; CHANNEL TESTING</text>
+
+  <!-- === Three channel cards === -->
+  <!-- Card 1: Meta (primary winner) -->
+  <rect x="32" y="64" width="154" height="180" rx="12" fill="#161B22"/>
+  <rect x="32" y="64" width="154" height="180" rx="12" stroke="#F59E0B" stroke-width="2" stroke-opacity="0.7"/>
+
+  <!-- Meta icon area -->
+  <circle cx="109" cy="108" r="28" fill="#F59E0B" opacity="0.12"/>
+  <circle cx="109" cy="108" r="28" fill="none" stroke="#F59E0B" stroke-width="1.5" stroke-opacity="0.4"/>
+  <!-- Meta "M" shape simplified -->
+  <path d="M95 118 L95 98 L109 112 L123 98 L123 118" fill="none" stroke="#FBBF24" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <text x="109" y="156" text-anchor="middle" fill="#F0F6FC" font-size="13" font-family="system-ui,sans-serif" font-weight="700">Meta Ads</text>
+  <text x="109" y="172" text-anchor="middle" fill="#8B949E" font-size="11" font-family="system-ui,sans-serif">Primary Channel</text>
+
+  <!-- Winner badge -->
+  <rect x="68" y="188" width="82" height="22" rx="5" fill="#F59E0B"/>
+  <text x="109" y="203" text-anchor="middle" fill="#0D1117" font-size="10" font-family="system-ui,sans-serif" font-weight="800">★ LOWEST CAC</text>
+
+  <!-- Card 2: Google -->
+  <rect x="213" y="64" width="154" height="180" rx="12" fill="#161B22"/>
+  <rect x="213" y="64" width="154" height="180" rx="12" stroke="#30363D" stroke-width="1.5"/>
+
+  <circle cx="290" cy="108" r="28" fill="#30363D"/>
+  <!-- Google "G" simplified -->
+  <path d="M302 108 L282 108 M302 108 A20 20 0 1 1 277 100" fill="none" stroke="#8B949E" stroke-width="2.5" stroke-linecap="round"/>
+
+  <text x="290" y="156" text-anchor="middle" fill="#F0F6FC" font-size="13" font-family="system-ui,sans-serif" font-weight="700">Google Search</text>
+  <text x="290" y="172" text-anchor="middle" fill="#8B949E" font-size="11" font-family="system-ui,sans-serif">Secondary</text>
+  <rect x="249" y="188" width="82" height="22" rx="5" fill="#21262D"/>
+  <text x="290" y="203" text-anchor="middle" fill="#8B949E" font-size="10" font-family="system-ui,sans-serif" font-weight="600">Tested</text>
+
+  <!-- Card 3: Influencer -->
+  <rect x="394" y="64" width="154" height="180" rx="12" fill="#161B22"/>
+  <rect x="394" y="64" width="154" height="180" rx="12" stroke="#30363D" stroke-width="1.5"/>
+
+  <circle cx="471" cy="108" r="28" fill="#30363D"/>
+  <!-- Person icon -->
+  <circle cx="471" cy="99" r="9" fill="none" stroke="#8B949E" stroke-width="2"/>
+  <path d="M453 122 C453 112 489 112 489 122" fill="none" stroke="#8B949E" stroke-width="2" stroke-linecap="round"/>
+
+  <text x="471" y="156" text-anchor="middle" fill="#F0F6FC" font-size="13" font-family="system-ui,sans-serif" font-weight="700">Influencer</text>
+  <text x="471" y="172" text-anchor="middle" fill="#8B949E" font-size="11" font-family="system-ui,sans-serif">Seeding</text>
+  <rect x="430" y="188" width="82" height="22" rx="5" fill="#21262D"/>
+  <text x="471" y="203" text-anchor="middle" fill="#8B949E" font-size="10" font-family="system-ui,sans-serif" font-weight="600">Tested</text>
+
+  <!-- === Tracking setup row === -->
+  <text x="32" y="276" fill="#8B949E" font-size="10" font-family="system-ui,sans-serif" letter-spacing="1.5">TRACKING LAYER</text>
+
+  <!-- Pixel chip -->
+  <rect x="32"  y="288" width="130" height="56" rx="8" fill="#161B22"/>
+  <rect x="32"  y="288" width="130" height="56" rx="8" stroke="#F59E0B" stroke-width="1.5" stroke-opacity="0.4"/>
+  <!-- Pixel icon (small squares) -->
+  <rect x="48" y="304" width="7" height="7" rx="1" fill="#F59E0B" opacity="0.8"/>
+  <rect x="57" y="304" width="7" height="7" rx="1" fill="#F59E0B" opacity="0.5"/>
+  <rect x="48" y="313" width="7" height="7" rx="1" fill="#F59E0B" opacity="0.5"/>
+  <rect x="57" y="313" width="7" height="7" rx="1" fill="#F59E0B" opacity="0.8"/>
+  <text x="74" y="308" fill="#F0F6FC" font-size="11" font-family="system-ui,sans-serif" font-weight="700">Meta Pixel</text>
+  <text x="74" y="322" fill="#8B949E" font-size="10" font-family="system-ui,sans-serif">+ CAPI</text>
+  <text x="97" y="336" text-anchor="middle" fill="#F59E0B" font-size="10" font-family="system-ui,sans-serif" font-weight="600">✓ Installed</text>
+
+  <!-- GA4 chip -->
+  <rect x="178" y="288" width="130" height="56" rx="8" fill="#161B22"/>
+  <rect x="178" y="288" width="130" height="56" rx="8" stroke="#F59E0B" stroke-width="1.5" stroke-opacity="0.4"/>
+  <!-- GA4 icon (bar chart) -->
+  <rect x="194" y="312" width="6" height="14" rx="2" fill="#F59E0B" opacity="0.5"/>
+  <rect x="202" y="304" width="6" height="22" rx="2" fill="#F59E0B" opacity="0.7"/>
+  <rect x="210" y="308" width="6" height="18" rx="2" fill="#F59E0B" opacity="0.9"/>
+  <text x="224" y="308" fill="#F0F6FC" font-size="11" font-family="system-ui,sans-serif" font-weight="700">GA4</text>
+  <text x="224" y="322" fill="#8B949E" font-size="10" font-family="system-ui,sans-serif">Analytics</text>
+  <text x="243" y="336" text-anchor="middle" fill="#F59E0B" font-size="10" font-family="system-ui,sans-serif" font-weight="600">✓ Installed</text>
+
+  <!-- Dashboard chip -->
+  <rect x="324" y="288" width="130" height="56" rx="8" fill="#161B22"/>
+  <rect x="324" y="288" width="130" height="56" rx="8" stroke="#30363D" stroke-width="1"/>
+  <text x="389" y="308" text-anchor="middle" fill="#F0F6FC" font-size="11" font-family="system-ui,sans-serif" font-weight="700">CAC Dashboard</text>
+  <text x="389" y="322" text-anchor="middle" fill="#8B949E" font-size="10" font-family="system-ui,sans-serif">Retention Baseline</text>
+  <text x="389" y="336" text-anchor="middle" fill="#8B949E" font-size="10" font-family="system-ui,sans-serif">Established</text>
+
+  <!-- Arrow flow -->
+  <path d="M162 316 L178 316" fill="none" stroke="#F59E0B" stroke-width="1.5" stroke-opacity="0.5" stroke-dasharray="3 2"/>
+  <path d="M308 316 L324 316" fill="none" stroke="#30363D" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <path d="M454 316 L480 316" fill="none" stroke="#30363D" stroke-width="1.5" stroke-dasharray="3 2"/>
+
+  <!-- Footer -->
+  <rect x="0" y="416" width="580" height="48" fill="#161B22"/>
+  <line x1="0" y1="416" x2="580" y2="416" stroke="#21262D" stroke-width="1"/>
+  <circle cx="32" cy="440" r="6" fill="#F59E0B"/>
+  <text x="46" y="445" fill="#8B949E" font-size="12" font-family="system-ui,sans-serif">Heyfood · Q1 Foundation — Building the Growth Infrastructure</text>
+</svg>
