@@ -976,7 +976,7 @@ button {
   font-weight: 800;
   color: var(--clr-white);
   line-height: 1.12;
-  max-width: 480px;
+  max-width: 800px;
   margin-bottom: 24px;
 }
 
@@ -1187,18 +1187,10 @@ button {
 }
 .footer__col a:hover { color: var(--clr-primary); }
 
-.footer__bottom {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 22px 0;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-
 .footer__bottom p {
   font-size: 12.5px;
   color: var(--clr-grey-400);
+  text-align: center;
 }
 
 .footer__legal {
@@ -1300,8 +1292,10 @@ button {
    19. STAT PREFIX
    -------------------------------------------------------- */
 .stat-card__prefix {
-  font-size: inherit;
+  font-family: var(--ff-display);
+  font-size: clamp(42px, 5vw, 58px);
   font-weight: 800;
+  color: var(--clr-dark);
   line-height: 1;
 }
 
