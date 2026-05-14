@@ -1304,7 +1304,10 @@ button {
   border-color: var(--clr-primary);
 }
 
-@media (max-width: 720px) {
+@media (max-width: 768px) {
+  .tools__grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
   .tools__grid { grid-template-columns: 1fr; }
 }
 
@@ -2093,6 +2096,73 @@ button {
 .cs-campaign__item:hover img,
 .cs-campaign__item:hover video { transform: scale(1.05); }
 
+/* Channel visual (Heyfood process section) */
+.cs-channel-visual {
+  background: #0D1117;
+  border-radius: var(--r-xl);
+  padding: 28px;
+  aspect-ratio: 4 / 3.2;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+.cs-channel-visual__label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255,255,255,0.35);
+  font-weight: 600;
+}
+.cs-channel-visual__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  flex: 1;
+  align-content: center;
+}
+.cs-channel-card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px;
+  padding: 14px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+.cs-channel-card--meta { background: rgba(24,119,242,0.15); border-color: rgba(24,119,242,0.3); }
+.cs-channel-card--google { background: rgba(255,255,255,0.07); border-color: rgba(255,255,255,0.14); }
+.cs-channel-card--influencer { background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.08); opacity: 0.65; }
+.cs-channel-card__logo {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.cs-channel-card--meta .cs-channel-card__logo { background: #1877F2; }
+.cs-channel-card--google .cs-channel-card__logo { background: #fff; }
+.cs-channel-card--influencer .cs-channel-card__logo { background: rgba(255,255,255,0.1); }
+.cs-channel-card__info strong { display: block; font-size: 12px; font-weight: 600; color: #fff; line-height: 1.3; }
+.cs-channel-card__info span { font-size: 11px; color: rgba(255,255,255,0.45); }
+.cs-channel-card--meta .cs-channel-card__info span { color: #93C5FD; }
+.cs-channel-badge {
+  position: absolute;
+  top: -9px; right: 8px;
+  background: #16A34A;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
 /* Next project */
 .cs-next {
   background: var(--clr-dark-navy);
@@ -2506,7 +2576,12 @@ button {
   .team__photos  { order: 2; }
 
   /* ---- Testimonials ---- */
-  .testimonials__track { grid-template-columns: repeat(2, 1fr); }
+  .testimonials__track { grid-template-columns: 1fr; }
+  .testi-card { padding: 20px; }
+  .testi-card__quote { font-size: 13px; }
+
+  /* ---- Certifications ---- */
+  .cert-card { flex: 1 1 calc(50% - 10px); min-width: unset; padding: 22px 18px; }
 
   /* ---- Dark CTA ---- */
   .dark-cta { padding: 72px 0; }
@@ -2572,9 +2647,9 @@ button {
 
   .cs-gallery__grid { grid-template-columns: 1fr; }
   .cs-campaign { padding: 56px 0; }
-  .cs-campaign__item { width: 160px; height: 110px; }
-  .cs-campaign__item--portrait { width: 130px; height: 178px; }
-  .cs-campaign__grid--video .cs-campaign__item--portrait { width: calc(48% - 4px); height: 260px; }
+  .cs-campaign__item { width: calc(50% - 4px); height: 160px; }
+  .cs-campaign__item--portrait { width: calc(50% - 4px); height: 200px; }
+  .cs-campaign__grid--video .cs-campaign__item--portrait { width: calc(80% - 6px); height: 340px; }
   .cs-next { padding: 48px 0; }
   .cs-next__inner { gap: 8px; }
   .cs-next__title { font-size: 18px; }
@@ -2593,6 +2668,18 @@ button {
   .section-heading { font-size: 26px; }
 
   .exp__grid { grid-template-columns: 1fr; gap: 14px; }
+
+  /* ---- Testimonials ---- */
+  .testimonials__track { grid-template-columns: 1fr; }
+  .testi-card { padding: 16px; }
+
+  /* ---- Certifications ---- */
+  .cert-card { flex: 1 1 100%; padding: 18px 14px; }
+
+  /* ---- Campaign cards ---- */
+  .cs-campaign__item { width: 100%; height: 200px; }
+  .cs-campaign__item--portrait { width: 65%; height: 280px; }
+  .cs-campaign__grid--video .cs-campaign__item--portrait { width: 85%; height: 360px; }
 
   .portfolio__grid { gap: 16px; }
   .p-card__info { padding: 12px 14px 14px; }
