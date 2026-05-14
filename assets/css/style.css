@@ -857,17 +857,16 @@ button {
 
 .testimonials__header {
   display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 44px;
   gap: 20px;
   flex-wrap: wrap;
+  text-align: center;
 }
 
 .testi-nav-group {
-  display: flex;
-  gap: 8px;
-  flex-shrink: 0;
+  display: none;
 }
 
 .testi-btn {
@@ -889,8 +888,8 @@ button {
 
 .testimonials__track {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
 }
 
 .testi-card {
@@ -937,6 +936,27 @@ button {
   flex-shrink: 0;
 }
 .testi-card--active .testi-card__author img { border-color: rgba(255,255,255,0.25); }
+
+.testi-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--clr-primary);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--ff-display);
+  font-size: 13px;
+  font-weight: 700;
+  flex-shrink: 0;
+  border: 2px solid var(--clr-grey-200);
+  letter-spacing: 0.02em;
+}
+.testi-card--active .testi-avatar {
+  border-color: rgba(255,255,255,0.25);
+  background: rgba(255,255,255,0.18);
+}
 
 .testi-card__author strong {
   display: block;
@@ -1224,15 +1244,15 @@ button {
 
 .tools__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
 
 .tool-cat {
   background: var(--clr-white);
   border: 1px solid var(--clr-grey-100, #F3F4F6);
   border-radius: var(--r-lg, 16px);
-  padding: 32px 28px;
+  padding: 24px 20px;
   transition: box-shadow var(--ease), transform var(--ease);
 }
 .tool-cat:hover {
@@ -2012,6 +2032,67 @@ button {
   aspect-ratio: 4 / 3;
 }
 
+/* Campaign Work Gallery */
+.cs-campaign {
+  background: var(--clr-grey-50);
+  padding: 80px 0;
+}
+.cs-campaign__label {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--brand-color, var(--clr-primary));
+  margin-bottom: 8px;
+  text-align: center;
+}
+.cs-campaign__heading {
+  font-family: var(--ff-display);
+  font-size: clamp(20px, 2.5vw, 28px);
+  font-weight: 800;
+  color: var(--clr-dark);
+  margin-bottom: 32px;
+  text-align: center;
+}
+.cs-campaign__grid,
+.cs-campaign__grid--2col,
+.cs-campaign__grid--portrait,
+.cs-campaign__grid--video {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+.cs-campaign__grid--video { gap: 12px; }
+.cs-campaign__item {
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  background: var(--clr-grey-100);
+  position: relative;
+  width: 300px;
+  height: 200px;
+  flex-shrink: 0;
+}
+.cs-campaign__item--portrait {
+  width: 220px;
+  height: 300px;
+}
+.cs-campaign__grid--video .cs-campaign__item--portrait {
+  width: calc(50% - 6px);
+  height: 380px;
+}
+.cs-campaign__item img,
+.cs-campaign__item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.cs-campaign__item:hover img,
+.cs-campaign__item:hover video { transform: scale(1.05); }
+
 /* Next project */
 .cs-next {
   background: var(--clr-dark-navy);
@@ -2425,7 +2506,7 @@ button {
   .team__photos  { order: 2; }
 
   /* ---- Testimonials ---- */
-  .testimonials__track { grid-template-columns: 1fr; }
+  .testimonials__track { grid-template-columns: repeat(2, 1fr); }
 
   /* ---- Dark CTA ---- */
   .dark-cta { padding: 72px 0; }
@@ -2490,6 +2571,10 @@ button {
   .cs-results-table td { padding: 10px 12px; font-size: 13px; }
 
   .cs-gallery__grid { grid-template-columns: 1fr; }
+  .cs-campaign { padding: 56px 0; }
+  .cs-campaign__item { width: 160px; height: 110px; }
+  .cs-campaign__item--portrait { width: 130px; height: 178px; }
+  .cs-campaign__grid--video .cs-campaign__item--portrait { width: calc(48% - 4px); height: 260px; }
   .cs-next { padding: 48px 0; }
   .cs-next__inner { gap: 8px; }
   .cs-next__title { font-size: 18px; }
