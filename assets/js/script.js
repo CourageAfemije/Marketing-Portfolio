@@ -9,6 +9,21 @@
    6. FAQ accordion
    ============================================================ */
 
+/* ----------------------------------------------------------
+   PORTFOLIO VIEW NOTIFICATIONS (ntfy.sh)
+   Topic: courage-portfolio-ca7f2e
+   Install ntfy app → subscribe to this topic for push alerts
+   ---------------------------------------------------------- */
+(function () {
+  const TOPIC = 'courage-portfolio-ca7f2e';
+  const page  = document.title.replace(' | Courage', '').trim() || 'Portfolio';
+  fetch('https://ntfy.sh/' + TOPIC, {
+    method : 'POST',
+    body   : '👀 Someone just viewed: ' + page,
+    headers: { Title: 'Portfolio View', Tags: 'eyes', Priority: 'default' }
+  }).catch(() => {});
+})();
+
 document.addEventListener('DOMContentLoaded', () => {
 
   /* ----------------------------------------------------------
